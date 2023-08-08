@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: red;
+}
+.pages{
+    background-color: red;
+}
+.pages li{
+    display: inline-block;
+}
+.pages li a{
+    text-decoration: none;
+    padding: 50px;
+    color: black;
+}
+.parrafo1{
+    color: darkblue;
+}
+.redes_footer{
+    color: aqua;
+}
+.footer1{
+    background-color: gray;
+    padding: 10px;
+}
+.formulario1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blueviolet;
+}
+.margin{
+    margin: 20px;
+}
+.ps5{
+    width: 600px;
+    height: auto;
+}
+.imgfo{
+    width: 100px;
+    height: 100px;
+}
+.formb{
+    margin: 10px;
+}
+.banner{
+    width: 1300px;
+    height: 300px;
+}
+.imgpro{
+    width: 300px;
+    height: 400px;
+}
+.ppro{
+    color: greenyellow;
+    font-family: 'Playfair Display', serif;
+}
+.marpro{
+    margin: 30px;
+}
+.titulop{
+    color: purple;
+    text-decoration:underline white;
+    margin: 20px;
+}
+.mapac{
+    width: 500px;
+    height: 400px;
+}
+.nombreem{
+    color: darkorange;
+}
+.imgem{
+    width: 450px;
+    height: 350px;
+}
+.parrafoem{
+    color: brown;
+    font-family: 'Noto Serif', serif;
+}
+.parrafosu{
+    font-family: 'Bebas Neue', sans-serif;
+    color: crimson;
+}
+.mapasu{
+    width: 300px;
+    height: 300px;
+}
+.containeri{
+    display: flex;
+}
+.pimg{
+    align-items: flex-start;
+    margin: 20px;
+}
+.bg-body-tertiary{
+    --bs-bg-opacity:none
+}
+.padding{
+    padding: 10px;
+}
+@media screen and (max-width:460px) {
+    .containeri{
+        display: flex;
+        flex-wrap: wrap;
+        .pimg{
+            width: auto;
+        }
+    }
+}
+.header_e{
+    display: grid;
+    grid-area: header_e;
+}
+.titulo_e{
+    display: grid;
+    grid-area: titulo_e;
+}
+.producto1_e{
+    display: grid;
+    grid-area: producto1_e;
+}
+.producto2_e{
+    display: grid;
+    grid-area: producto2_e;
+}
+.footer_e{
+    display: grid;
+    grid-area: footer_e;
+}
+@media screen and (max-width:460px) {
+    .containere {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0,5fr 1fr 1.5fr 1.5fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header_e"
+        "titulo_e"
+        "producto1_e"
+        "producto2_e"
+        "footer_e"; 
+    }
+}
+.header_p{
+    display: grid;
+    grid-area: header_p;
+}
+.titulo_p{
+    display: grid;
+    grid-area: titulo_p;
+}
+.banner_p{
+    display: grid;
+    grid-area: banner_p;
+}
+.productop_e{
+    display: grid;
+    grid-area: producto1_p;
+}
+.producto2_p{
+    display: grid;
+    grid-area: producto2_p;
+}
+.producto3_p{
+    display: grid;
+    grid-area: producto3_p;
+}
+.footer_p{
+    display: grid;
+    grid-area: footer_p;
+}
+.producto3_p{
+    width: 400px;
+    height: 300px;
+}
+@media screen and (max-width:460px) {
+    .containerp{
+        display: flex;
+        flex-wrap: wrap;
+        .header_p{
+            width: 460px;
+        }
+        .banner{
+            width: 400px;
+            height: 200px;
+        }
+        .footer_p{
+            width: 460px;
+        }
+    }
+    .containeri{
+        width: 460px;
+        .producto3_p{
+            width: 400px;
+            height: 200px;
+        }
+    }
+}
+.containerc{
+    .formulario_c{
+        display: inline-block;
+        margin: 20px;
+    }
+    .mapa_c{
+        display: inline-block;
+        margin-left: 180px;
+    }
+}
+@media screen and (max-width:460px) {
+    .containerc{
+        display: flex;
+        flex-wrap: wrap;
+        .mapa_c{
+            width: auto;
+            margin-left: 0;
+        }
+        .header_c{
+            width: 460px;
+        }
+        .footer_c{
+            width: 460px;
+        }
+    }
+}
