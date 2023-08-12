@@ -34,49 +34,25 @@
         <main class="formulario1 ">
             <div class="formulario_c">
                 <h1> Cuenta </h1>
-                <form action="">
-                    <fieldset>
-                        <img src="../Imagenes/account-icon.png" alt="logo de cuenta" width="40px">
-                        <div class="formb">
-                            <label for="name">nombre</label>
-                            <input type="text" name="name" placeholder="Sofia" >
-                        </div>
-                        <div class="formb">
-                            <label for="surname"> apellido </label>
-                            <input type="text" name="surname" placeholder="portillo">
-                        </div>
-                        <div class="formb">
-                            <label for="email">correo electronico </label>
-                            <input type="email" required name="email" placeholder="sofiaportillo34@gmail.com">
-                        </div>
-                        <div class="formb">
-                            <label for="password">contrasena</label>
-                            <input type="password" name="password">
-                        </div>
-                        <div class="formb">
-                            <label for="nac">fecha de nacimiento</label>
-                            <input type="date" name="nac">
-                        </div>
-                        <div class="formb">
-                            <label for="pais">pais de residencia</label>
-                            <select name="pais">
-                                <option value="arg">argentina</option>
-                                <option value="br">brasil</option>
-                            </select>
-                        </div>
-                        <div class="formb">
-                            <label for="sexo">genero</label>
-                            <input type="radio" name="sexo" id="hombre">
-                            <input type="radio" name="sexo" id="mujer">
-                            <input type="radio" name="sexo" id="no binario">
-                        </div>
-                        <input type="submit" value="enviar datos">
-                        <input type="reset" value="borrar datos">
-                    </fieldset>
-                </form> 
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">NUNCA COMPARTAS TU INFORMACION CON NADIE</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">clickeame</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">acceder</button>
+                </form>
             </div>
-            <div class="mapa_c">
-                <iframe class="margin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26288985.01829967!2d-84.91891691534371!3d-36.45502798284576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1689526290722!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="padding mapa_con">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26288985.01829967!2d-84.91891691534371!3d-36.45502798284576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1689526290722!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
