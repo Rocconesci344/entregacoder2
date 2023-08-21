@@ -84,7 +84,7 @@ header {
   height: 80%; }
 
 .ppro {
-  color: greenyellow;
+  color: black;
   font-family: 'Playfair Display', serif;
   max-width: 360px;
   width: 100%; }
@@ -93,8 +93,10 @@ header {
   margin: 10px; }
 
 .titulop {
-  color: purple;
-  text-decoration: underline white; }
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif; }
 
 .mapac {
   width: 500px;
