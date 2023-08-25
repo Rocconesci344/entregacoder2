@@ -24,8 +24,7 @@ header{
 }
 .parrafo1{
     color: darkblue;
-    max-width: 460px;
-    width: 100%;
+    margin:  1rem;
 }
 .redes_footer{
     color: white;
@@ -37,18 +36,21 @@ header{
         text-decoration: underline;
     }
     .pfooter{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         .pfooter1{
-            max-width: 400px;
             width: 100%;
-            max-height: 150px;
             height: 100%;
         }
         .pfooter2{
-            max-width: 400px;
             width: 100%;
-            max-height: 150px;
             height: 100%;
+        }
+    }
+    @media screen and (max-width:460px) {
+        .pfooter{
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 }
@@ -69,9 +71,7 @@ header{
 }
 .imgfo{
     max-width: 40px;
-    width: 100%;
     max-height: 100px;
-    height: 100%;
     margin: 10px;
 }
 .formb{
@@ -86,7 +86,7 @@ header{
 }
 .imgpro{
     max-width: 300px;
-    width: 80%;
+    width: 100%;
     max-height: 400px;
     height: 80%;
 }
@@ -136,20 +136,32 @@ header{
     height: 100%;
 }
 .containeri{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 .timg{
     text-decoration: underline;
-    max-width: 400px;
-    width: 100%;
-    max-height: 20px;
-    height: 100%;
 }
 .pimg{
+    display: flex;
     align-items: flex-start;
-    padding: 10px;
-    max-width: 400px;
+    max-width: 230px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    padding: 20px;
+    font-weight: bold;
+}
+.pimgi{
+    display: flex;
+    align-items: flex-start;
+    max-width: 230px;
+    font-weight: bold;
+}
+.pimge{
+    display: flex;
+    align-items: flex-start;
+    max-width: 230px;
     width: 100%;
     max-height: 80px;
     height: 100%;
@@ -208,8 +220,8 @@ header{
     grid-area: header_p;
 }
 .titulo_p{
-    display: grid;
-    grid-area: titulo_p;
+    display: flex;
+    justify-content: center;
 }
 .banner_p{
     display: grid;
@@ -217,8 +229,7 @@ header{
     width: 100%;
 }
 .section_p{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
 .productop_e{
     display: grid;
@@ -339,4 +350,41 @@ header{
     width: 100%;
     max-height: 80px;
     width: 100%;
+}
+.divf{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.navbar{
+    a{
+        color: white
+    }
+}
+.navbar-nav{
+    a{
+        color: white;
+    }
+}
+body{
+    background-color: bisque;
+}
+.producto1_p{
+    border: 2px solid gray;
+}
+.parrafo_index{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:460px) {
+    .containeri{
+        display: grid;
+        grid-template-columns: 1fr;
+        .parrafo_index{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
