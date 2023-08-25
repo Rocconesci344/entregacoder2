@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="icon" href="../imagenes/favicon.ico">
-    <title>INFOGAME|Contactanos</title>
+    <title>INFOGAME| Contactanos</title>
 </head>
 <body>
     <div class="containerc">
@@ -34,23 +34,72 @@
                 </div>
             </nav>
         </header>
-        <section class="sectionc">
-            <div class="divc">
-                <img class="imgc" src="../imagenes/wsp-logo.png" alt="whatsapp">
-                <h2>contactanos</h2>
-                <p>Pregunte todo lo que necesite</p>
-            </div>
-            <div class="divc">
-                <img class="imgc" src="../imagenes/sv.jpg" alt="servicio tecnico">
-                <h2>Servicio tecnico</h2>
-                <p>Reparamos en nuestras sucursales</p>
-            </div>
-            <div class="divc">
-                <img class="imgc" src="../imagenes/tiktok-logo.png" alt="whatsapp">
-                <h2>Tenemos tik tok</h2>
-                <p>Ve todas las novedades</p>
-            </div>
-        </section>
+        <main>
+            <section class="sectionc">
+                <div>
+                    <form action="">
+                        <fieldset class="formc">
+                            <div>
+                                <div class="itemsform">
+                                    <label for="name">nombre</label>
+                                    <input type="text" name="name" placeholder="juan">
+                                </div>
+                                <div class="itemsform">
+                                    <label for="surname">apellido</label>
+                                    <input type="text" name="surname" placeholder="suarez">
+                                </div>
+                                <div class="itemsform">
+                                    <label for="email">email*</label>
+                                    <input type="email" required name="email" placeholder="juan@gmail.com">
+                                </div>
+                                <div class="itemsform">
+                                    <label for="password">contraseña</label>
+                                    <input type="password" name="password">
+                                </div>
+                                <div class="itemsform">
+                                    <label for="nac">fecha de nacimiento</label>
+                                    <input type="date" name="nac">
+                                </div>
+                                <div class="itemsform">
+                                    <label for="pais">pais de residencia</label>
+                                    <select name="pais">
+                                        <option value="arg">argentina</option>
+                                        <option value="br">brasil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="generoc">
+                                <label for="sexo">genero</label>
+                                    <input type="radio" name="sexo" value="fem">mujer
+                                    <input type="radio" name="sexo" value="hom">hombre
+                                    <input type="radio" name="sexo" value="otro">no binario
+                            </div>
+                            <div class="botonesformc">
+                                <input type="submit" value="enviar datos">
+                                <input type="reset" value="borrar datos">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="redes_c">
+                    <div class="divc">
+                        <img class="imgc" src="../imagenes/wsp-logo.png" alt="whatsapp">
+                        <h2>+54 11 4455-1177</h2>
+                    </div>
+                    <div class="divc">
+                        <img class="imgc" src="../imagenes/tiktok-logo.png" alt="Tik tok">
+                        <h2>@InfogameOK</h2>
+                    </div>
+                    <div class="divc">
+                        <img class="imgc" src="../imagenes/x-logo.png" alt="Twitter">
+                        <h2>@InfogameOK</h2>
+                    </div>
+                    <div class="divc">
+                        <img class="imgc" src="../imagenes/ig-logo.png" alt="Instagram">
+                        <h2>@InfogameOK</h2>
+                    </div>
+                </div>
+            </section>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        
         <footer class="footer1 redes_footer footer_index">
