@@ -6,10 +6,6 @@
 header {
   background-color: black; }
 
-.parrafo1 {
-  color: darkblue;
-  margin: 1rem; }
-
 .redes_footer {
   color: white; }
 
@@ -43,9 +39,8 @@ header {
   display: block; }
 
 .ps5 {
-  max-width: 420px;
   width: 100%;
-  height: auto; }
+  height: 100%; }
 
 .imgfo {
   max-width: 40px;
@@ -106,13 +101,30 @@ header {
   width: 100%;
   max-height: 350px; }
 
-.containeri {
+.conti {
   display: grid;
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  gap: 2rem; }
+  .conti .containeri {
+    display: flex; }
+    .conti .containeri .btni {
+      display: flex;
+      justify-content: center; }
+      .conti .containeri .btni .btnindex {
+        background-color: #5f5fd1;
+        color: white;
+        border-radius: 10px; }
 
 .timg {
   color: #d45353;
   font-weight: bold; }
+
+.timgi {
+  color: #d45353;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif; }
 
 .pimg {
   display: flex;
@@ -125,10 +137,14 @@ header {
   padding: 20px;
   font-weight: bold; }
 
+.info_index {
+  background-color: #a7a7a7; }
+
 .pimgi {
   display: flex;
   align-items: flex-start;
-  max-width: 230px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 24px;
   font-weight: bold; }
 
 .pimge {
@@ -149,10 +165,11 @@ header {
   padding: 1rem; }
 
 @media screen and (max-width: 460px) {
-  .containeri {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; } }
+  .conti {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .conti .ps5 {
+      border-radius: 20px; } }
 
 .header_e {
   display: grid;
@@ -300,7 +317,7 @@ body {
 
 .parrafo_index {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column; }
 
 @media screen and (max-width: 460px) {
   .containeri {
@@ -366,7 +383,8 @@ body {
 
 .mapa_s {
   display: flex;
-  margin: 20px 20px; }
+  margin: 20px 20px;
+  border-radius: 30px; }
 
 .botons {
   max-width: 200px;
@@ -397,7 +415,8 @@ body {
 .formc {
   padding: 1rem;
   width: 100%;
-  background-color: #c1e6e6; }
+  background-color: #c1e6e6;
+  border-radius: 30px; }
 
 .itemsform {
   display: flex;
@@ -407,7 +426,8 @@ body {
 .redes_c {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #a7a7a7; }
+  background-color: #a7a7a7;
+  border-radius: 30px; }
 
 .botonesformc {
   display: flex;

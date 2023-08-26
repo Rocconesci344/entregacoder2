@@ -3,6 +3,8 @@ $negro:black;
 $titulos:rgb(212, 83, 83);
 $celeste: rgb(193, 230, 230);
 $rosa:pink;
+$gris:rgb(167, 167, 167);
+$btn: rgb(95, 95, 209);
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +12,6 @@ $rosa:pink;
 }
 header{
     background-color: $negro;
-}
-.parrafo1{
-    color: darkblue;
-    margin:  1rem;
 }
 .redes_footer{
     color: white;
@@ -54,9 +52,8 @@ header{
     display: block;
 }
 .ps5{
-    max-width: 420px;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .imgfo{
     max-width: 40px;
@@ -117,13 +114,33 @@ header{
     width: 100%;
     max-height: 350px;
 }
-.containeri{
+.conti{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    gap: 2rem;
+    .containeri{
+        display: flex;
+        .btni{
+            display: flex;
+            justify-content: center;
+            .btnindex{
+                background-color: $btn;
+                color: $blanco;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 .timg{
     color: $titulos;
     font-weight: bold;
+}
+.timgi{
+    color: $titulos;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .pimg{
     display: flex;
@@ -136,10 +153,14 @@ header{
     padding: 20px;
     font-weight: bold;
 }
+.info_index{
+    background-color: $gris;
+}
 .pimgi{
     display: flex;
     align-items: flex-start;
-    max-width: 230px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
     font-weight: bold;
 }
 .pimge{
@@ -159,10 +180,12 @@ header{
     padding: 1rem;
 }
 @media screen and (max-width:460px) {
-    .containeri{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .conti {
+        display: grid;
+        grid-template-columns: 1fr;
+        .ps5{
+            border-radius: 20px;
+        }
     }
 }
 .header_e{
@@ -323,7 +346,7 @@ body{
 }
 .parrafo_index{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 @media screen and (max-width:460px) {
     .containeri{
@@ -394,6 +417,7 @@ body{
 .mapa_s{
     display: flex;
     margin: 20px 20px;
+    border-radius: 30px;
 }
 .botons{
     max-width: 200px;
@@ -428,6 +452,7 @@ body{
     padding: 1rem;
     width: 100%;
     background-color: $celeste;
+    border-radius: 30px;
 }
 .itemsform{
     display: flex;
@@ -437,7 +462,8 @@ body{
 .redes_c{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: rgb(167, 167, 167);
+    background-color: $gris;
+    border-radius: 30px;
 }
 .botonesformc{
     display: flex;
@@ -451,7 +477,7 @@ body{
 }
 .btnc{
     border-radius: 10px;
-    background-color: rgb(95, 95, 209);
+    background-color:$btn;
     color: $blanco;
     font-size: 18px;
 }
