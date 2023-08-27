@@ -1,18 +1,6 @@
-$blanco:white;
-$negro:black;
-$titulos:rgb(212, 83, 83);
-$celeste: rgb(193, 230, 230);
-$rosa:pink;
-$gris:rgb(167, 167, 167);
-$btn: rgb(95, 95, 209);
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-}
-header{
-    background-color: $negro;
-}
+@import 'variables';
+@import 'data';
+@import 'media-queries';
 .redes_footer{
     color: white;
 }
@@ -34,7 +22,7 @@ header{
             height: 100%;
         }
     }
-    @media screen and (max-width:460px) {
+    @include mobile {
         .pfooter{
             display: grid;
             grid-template-columns: 1fr;
@@ -93,17 +81,19 @@ header{
     height: 400px;
 }
 .nombreem{
-    color: $negro;
+    color: #d45353;
+    font-weight: bold;
 }
 .imgem{
     max-width: 450px;
     width: 100%;
-    max-height: 350px;
-    height: 100%;
+    max-height: 300px;
 }
-.parrafoem{
-    color: brown;
-    font-family: 'Noto Serif', serif;
+.producto_e{
+    background-color: $rosa;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
 }
 .parrafosu{
     font-family: 'Bebas Neue', sans-serif;
@@ -124,6 +114,7 @@ header{
         .btni{
             display: flex;
             justify-content: center;
+            font-size: 30px;
             .btnindex{
                 background-color: $btn;
                 color: $blanco;
@@ -159,19 +150,16 @@ header{
 .pimgi{
     display: flex;
     align-items: flex-start;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
     font-weight: bold;
 }
 .pimge{
     display: flex;
-    align-items: flex-start;
-    max-width: 230px;
-    width: 100%;
-    max-height: 80px;
-    height: 100%;
     padding: 20px;
     font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
 }
 .bg-body-tertiary{
     --bs-bg-opacity:none
@@ -179,7 +167,7 @@ header{
 .padding{
     padding: 1rem;
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .conti {
         display: grid;
         grid-template-columns: 1fr;
@@ -188,38 +176,8 @@ header{
         }
     }
 }
-.header_e{
-    display: grid;
-    grid-area: header_e;
-}
 .titulo_e{
-    display: grid;
-    grid-area: titulo_e;
-}
-.producto1_e{
-    display: grid;
-    grid-area: producto1_e;
-}
-.producto2_e{
-    display: grid;
-    grid-area: producto2_e;
-}
-.footer_e{
-    display: grid;
-    grid-area: footer_e;
-}
-.header_p{
-    display: grid;
-    grid-area: header_p;
-}
-.titulo_p{
-    display: flex;
-    justify-content: center;
-}
-.banner_p{
-    display: grid;
-    grid-area: banner_p;
-    width: 100%;
+    text-align: center;
 }
 .section_p{
     display: grid;
@@ -249,7 +207,7 @@ header{
     max-height: 300px;
     height: 100%;
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .containerp{
         display: flex;
         flex-wrap: wrap;
@@ -348,7 +306,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .containeri{
         display: grid;
         grid-template-columns: 1fr;
@@ -373,7 +331,7 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .section_p{
         display: grid;
         grid-template-columns: 1fr;
@@ -388,9 +346,19 @@ body{
 .tituloe{
     color: $titulos;
     padding: 10px;
-    text-decoration:underline;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
+}
+.container_e{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+@include mobile {
+    .container_e{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 .titulos{
     color: $titulos;
@@ -431,10 +399,11 @@ body{
 .containerp{
     background-color: rgb(228, 207, 207);
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .mapa_s{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .parrafosu{
         font-size: 15px;
@@ -469,7 +438,7 @@ body{
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width:460px) {
+@include mobile {
     .sectionc{
         display: grid;
         grid-template-columns: 1fr;
