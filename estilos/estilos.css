@@ -447,7 +447,9 @@ body {
     display: grid;
     grid-template-columns: 1fr; }
   .formc {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .main_c {
+    display: flex; } }
 
 .btnc {
   max-width: 200px;
