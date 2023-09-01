@@ -435,7 +435,8 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #a7a7a7;
-  border-radius: 30px; }
+  border-radius: 30px;
+  max-width: 300px; }
 
 .botonesformc {
   display: flex;
