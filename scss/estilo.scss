@@ -81,8 +81,9 @@
     height: 400px;
 }
 .nombreem{
-    color: #579ba7;
+    color: $titulos;
     font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .imgem{
     max-width: 450px;
@@ -90,7 +91,7 @@
     max-height: 300px;
 }
 .producto_e{
-    background-color: #ffe58c;
+    background-color: $celeste;
     padding: 15px;
     margin: 10px;
     border-radius: 20px;
@@ -340,7 +341,7 @@ body{
 .preciop{
     max-width: 200px;
     padding: 1rem;
-    color: green;
+    color: #06064d;
     font-weight: bold;
 }
 .botonp{
@@ -408,7 +409,7 @@ body{
     background-color: $celeste;
 }
 .textos_sd{
-    background-color: $amarillo;
+    background-color: $celeste2;
 }
 .mapa_s{
     display: flex;
@@ -431,7 +432,7 @@ body{
         align-items: center;
     }
     .mapasd{
-        background-color: $amarillo;
+        background-color: $celeste2;
     }
     .mapasi{
         background-color: $celeste;
@@ -499,6 +500,8 @@ body{
     font-size: 20px;
 }
 .p_c{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     display: flex;
+    color: $titulos;
+    text-decoration: underline;
 }
