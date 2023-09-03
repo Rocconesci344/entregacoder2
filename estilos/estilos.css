@@ -322,7 +322,8 @@ body {
   max-width: 200px;
   padding: 1rem;
   color: #06064d;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif; }
 
 .botonp {
   max-width: 200px;
@@ -408,7 +409,7 @@ body {
     flex-direction: column;
     align-items: center; }
   .mapasd {
-    background-color: #6ea3a3; }
+    background-color: #a7a7a7; }
   .mapasi {
     background-color: #c1e6e6; }
   .parrafosu {

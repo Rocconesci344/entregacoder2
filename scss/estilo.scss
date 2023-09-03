@@ -343,6 +343,7 @@ body{
     padding: 1rem;
     color: #06064d;
     font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .botonp{
     max-width: 200px;
@@ -432,7 +433,7 @@ body{
         align-items: center;
     }
     .mapasd{
-        background-color: $celeste2;
+        background-color: $gris;
     }
     .mapasi{
         background-color: $celeste;
